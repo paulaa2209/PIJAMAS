@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --blanco: #FFFFFF;
+            --negro: #000000;
+            --gris: #5E5E5E;
+            --rosa: #EF9DAA;
+            --pastel: #FEEBED;
+            --beige: #C8AD8D;
+            --sm: 12px;
+            --md: 15px;
+            --lg: 25px;
+        }  
+        body {
+           margin: 0;
+           font-family: 'Quicksand', sans-serif;
+        }
+        .cards-container {
+            place-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 20px;
+        }
+        .product-card {
+            width: 240px;
+        }
+        .product-card img{
+            width: 240px;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .info {
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            margin-top: 12px;
+        }
+        .info figure {
+            margin: 0;
+        }
+        .info figure img {
+            width: 35px;
+            height: 35px;
+        }
+        .info div p:nth-child(1) {
+            font-size: var(--md);
+            font-weight: bold;
+            margin: 0px 0px 4px 0px;        
+        }
+        .info div p:nth-child(2) {
+            color: var(--gris);
+            font-weight: bold;
+            margin: 0px;
+        }
+        @media (max-width: 800px) {
+            .cards-container {
+                grid-template-columns: repeat(auto-fill, 140px);
+            }
+            .product-card {
+            width: 140px;
+            }
+            .product-card img{
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+
+            <div class="product-card">
+                <img src="./Estilos/Plmari.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Pantalón largo Mari</p>  
+                        <p>$35.000 COP</p>
+                    </div>                    
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Estilos/Babymajo.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Short Majo</p>
+                        <p>$35.000 COP </p>
+                    </div>
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Estilos/Babymg.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Short manga</p>
+                        <p>$35.000 COP </p>
+                    </div>
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png" alt="">
+                    </figure>
+                </div>
+            </div>
+                
+            <div class="product-card">
+                <img src="./Estilos/Pesliz.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Pescador Liz</p>
+                        <p>$35.000 COP </p>
+                    </div>
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png"alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Estilos/Pesmajo.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Pescador Majo</p>
+                        <p>$35.000 COP </p>
+                    </div>
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png" alt="">
+                    </figure>
+                </div>
+            </div>  
+
+            <div class="product-card">
+                <img src="./Estilos/Plmari.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Pantalón largo Mari</p>  
+                        <p>$35.000 COP</p>
+                    </div>                    
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Estilos/Babymajo.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Short Majo</p>
+                        <p>$35.000 COP </p>
+                    </div>
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Estilos/Babymg.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Short manga</p>
+                        <p>$35.000 COP </p>
+                    </div>
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png" alt="">
+                    </figure>
+                </div>
+            </div>
+                
+            <div class="product-card">
+                <img src="./Estilos/Pesliz.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Pescador Liz</p>
+                        <p>$35.000 COP </p>
+                    </div>
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png"alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Estilos/Pesmajo.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Pescador Majo</p>
+                        <p>$35.000 COP </p>
+                    </div>
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png" alt="">
+                    </figure>
+                </div>
+            </div>  
+
+            <div class="product-card">
+                <img src="./Estilos/Plmari.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Pantalón largo Mari</p>  
+                        <p>$35.000 COP</p>
+                    </div>                    
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Estilos/Babymajo.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Short Majo</p>
+                        <p>$35.000 COP </p>
+                    </div>
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Estilos/Babymg.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Short manga</p>
+                        <p>$35.000 COP </p>
+                    </div>
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png" alt="">
+                    </figure>
+                </div>
+            </div>
+                
+            <div class="product-card">
+                <img src="./Estilos/Pesliz.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Pescador Liz</p>
+                        <p>$35.000 COP </p>
+                    </div>
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png"alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Estilos/Pesmajo.jpeg" alt="">
+                <div class="info">
+                    <div>
+                        <p>Pescador Majo</p>
+                        <p>$35.000 COP </p>
+                    </div>
+                    <figure>
+                        <img src="./Iconos/anadir-a-la-cesta.png" alt="">
+                    </figure>
+                </div>
+            </div>  
+
+        </div>
+    </section>
+
+</body>
+</html>

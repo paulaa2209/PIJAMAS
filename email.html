@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --blanco: #FFFFFF;
+            --negro: #000000;
+            --gris: #5E5E5E;
+            --rosa: #EF9DAA;
+            --pastel: #FEEBED;
+            --beige: #C8AD8D;
+            --sm: 12px;
+            --md: 15px;
+            --lg: 25px;
+        }  
+        body {
+           margin: 0;
+           font-family: 'Quicksand', sans-serif;
+        }
+        .login {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .form-container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 350px;
+            justify-items: center;
+        }
+        .logo {
+            width: 180px;
+            margin-bottom: 50px; 
+            display: none; 
+        }
+        .title {
+            font-size: var(--lg);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .subtitle {
+            color: var(--gris);
+            font-size: var(--md);
+            font-weight: 300;
+            margin-top: 0;
+            margin-bottom: 70px;
+            text-align: center;
+        }
+        .email-image {
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .primary-button {
+            background-color: var(--rosa);
+            border: none;
+            border-radius: 8px;
+            color: var(--blanco);
+            font-size: var(--md);
+            width: 100%;
+            cursor: pointer;
+            font-weight: bold;
+            height: 40px;
+            margin-bottom: 20px;
+        }
+        .login-button {
+            margin-top: 14px;
+            margin-bottom: 10px;
+        }
+        .resend {
+            font-size: var(--sm);
+        }
+        .resend span {
+            color: var(--girs);
+        }
+        .resend a {
+            color: var(--rosa);
+            text-decoration: none;
+        }
+        @media (max-width: 800px) {
+            .logo {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <center>
+                <img src="./Logos/PC.png" alt="logo" class="logo">
+            </center>
+            <h1 class="title">El correo ha sido enviado </h1>
+            <p class="subtitle">Por favor revise su correo y siga las instrucciones sobre cómo restablecer su contraseña </p>
+            
+            <div class="email-image">
+                <img src="./Iconos/correo.png" alt="email" width="100" height="85">
+            </div>
+            <center>
+                <button class="primary-button login-button">Ingresar</button>
+                <p class="resend"> 
+                    <span>¿No recibió su correo?</span>
+                    <a href="/">Reenviar</a>
+                </p>
+            </center>
+
+        </div>
+    </div>  
+</body>
+</html>

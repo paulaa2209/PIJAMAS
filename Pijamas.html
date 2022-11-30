@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --blanco: #FFFFFF;
+            --negro: #000000;
+            --gris: #5E5E5E;
+            --rosa: #EF9DAA;
+            --pastel: #FEEBED;
+            --beige: #926e02;
+            --sm: 12px;
+            --md: 15px;
+            --lg: 25px;
+        }  
+        body {
+           margin: 0;
+           font-family: 'Quicksand', sans-serif;
+        }
+        nav {
+            display: flex;
+        }
+        .menu {
+            display: none;
+        }
+        .logo {
+            width: 120px; 
+        }
+        .navbar-left ul, .navbar-right ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-left {
+            display: flex;
+        }
+        .navbar-left ul li a, .navbar-right ul li a {
+            text-decoration: none;
+            color: var(--negro);
+            border: 1px solid var(--blanco);
+        }
+        .navbar-left ul li a:hover, .navbar-right ul li a:hover {
+            border: 1px solid var(--beige);
+            color: var(--beige);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+       <img src="./Iconos/menu.png" alt="menu" class="menu" width="35" height="30">
+
+       <div class="navbar-left">
+            <img src="./Logos/PC.png" alt="logo" class="logo">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="principal.html">Tienda</a></li>
+                <li><a href="">Nuevo</a></li>
+                <li><a href="">Mayoristas</a></li>
+                <li><a href="">Descuento</a></li>
+            </ul>
+       </div>
+
+       <div class="navbar-right">
+            <ul>
+                <li><a href="index.html">Ingresar/Registrarse</a></li>
+                <li class="shop"><img src="./Iconos/verificar.png" alt="carrito" class="carrito" width="35" height="35"></li>
+                <li class="user"><img src="./Iconos/usuario.png" alt="user" class="user" width="30" height="30"></li>
+                <li class="search"><img src="./Iconos/lupa.png" alt="search" class="search" width="20" height="20"></li>
+            </ul>
+       </div>
+    </nav>
+</body>
+</html>
